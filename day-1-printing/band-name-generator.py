@@ -1,0 +1,1 @@
+print(input("Enter you home town: ") + input("Enter your pet name: "))
