@@ -1,5 +1,7 @@
 def shift(s,k):
- 
+    
+    wordlist = ['a', 'b', 'c']
+    
     nw = ""
     for i in s:
         
