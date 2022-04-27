@@ -1,4 +1,5 @@
 import os
+import time
 import logo
 
 
@@ -32,7 +33,4 @@ for bid in bidders:
             
 print(f"WINNER - {winner} BID AMOUNT : ${highest}")
         
-
-        
-
-    
+time.sleep(5)
