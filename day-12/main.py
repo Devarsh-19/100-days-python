@@ -14,12 +14,11 @@
 # my_screen.exitonclick()
 
 from prettytable import PrettyTable
-PTables = PrettyTable()
+x = PrettyTable()
 
-PTables = PrettyTable()
-PTables.field_names = ["Selection No.", "Weapon Name", "Damage"]
-PTables.add_row(["0", "Fist", "1 dp"])
-PTables.add_row(["1", "Knuckle Busters", "2.5 dp"])
-PTables.add_row(["2", "Cheap Knife", "5 dp"])
-PTables.add_row(["3", "Wooden Baton", "6 dp"])
-print(PTables)
+x.add_column("Genre", ["Action", "Romance", "Horror"])
+x.add_column("Name",["Naruto", "Your Name", "Parasyte"])
+
+x.align = "l"
+
+print(x)
