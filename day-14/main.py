@@ -2,6 +2,7 @@ from re import S
 from secrets import choice
 from turtle import *
 from random import randint
+import turtle
 
 
 tim = Turtle()
@@ -70,23 +71,36 @@ def gen_color():
     tp = (r, g,b)
     return tp
     
+# turtle.bgcolor("black")
+# tim.hideturtle()
+# colors = ["red", "orange", "pink", "black", "blue", "cyan", "green", "brown", "purple"]
+# tim.pensize(width=8)
+# tim.speed("fastest")
+# turtle.colormode(255)
+
+# direction = [0 , 90, 180, 270]
+
+# for i in range(200):
+#     tim.forward(30)
+#     tim.setheading(choice(direction))
+#     tim.color(gen_color())
+
+#---------------------------------------------------------------------------------------------------------------------
+
+# SPIROGRAPH
+
+turtle.bgcolor("black")
 
 tim.hideturtle()
-colors = ["red", "orange", "pink", "black", "blue", "cyan", "green", "brown", "purple"]
-tim.pensize(width=4)
+tim.pensize(width=2)
 tim.speed("fastest")
-tim.colormode(255)
+turtle.colormode(255)
 
-direction = [0 , 90, 180, 270]
-
-for i in range(200):
-    tim.forward(30)
-    tim.setheading(choice(direction))
+for i in range(150):
+    tim.circle(90)
+    tim.setheading(tim.heading()+5)
     tim.color(gen_color())
 
-
-
-    
-    
+screen = turtle.Screen()
 
 exitonclick()
