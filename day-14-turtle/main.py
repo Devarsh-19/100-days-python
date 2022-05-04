@@ -89,18 +89,33 @@ def gen_color():
 
 # SPIROGRAPH
 
-turtle.bgcolor("black")
+# turtle.bgcolor("black")
 
-tim.hideturtle()
-tim.pensize(width=2)
-tim.speed("fastest")
-turtle.colormode(255)
+# tim.hideturtle()
+# tim.pensize(width=2)
+# tim.speed("fastest")
+# turtle.colormode(255)
 
-for i in range(150):
-    tim.circle(90)
-    tim.setheading(tim.heading()+5)
-    tim.color(gen_color())
+# for i in range(150):
+#     tim.circle(90)
+#     tim.setheading(tim.heading()+5)
+#     tim.color(gen_color())
 
-screen = turtle.Screen()
+# screen = turtle.Screen()
 
-exitonclick()
+# exitonclick()
+
+
+import colorgram
+
+
+rgb_cols = []
+colors = colorgram.extract("image.jpg", 30)
+
+for i in colors:
+    r = colors.rgb.r
+    g = colors.rgb.g
+    b = colors.rgb.b
+    rgb_cols.append((r,g,b)) 
+
+print(rgb_cols)
