@@ -7,8 +7,8 @@ import turtle
 
 tim = Turtle()
 
-tim.shape("turtle")
-tim.color("red")
+# tim.shape("turtle")
+# tim.color("red")
 
 # #RECTANGLE
 
@@ -106,16 +106,36 @@ def gen_color():
 # exitonclick()
 
 
-import colorgram
+# import colorgram
+
+# turtle.colormode(255)
+# rgb_colors = []
+# colors = colorgram.extract('day-14-turtle\image.jpg', 30)
+# for color in colors:
+#     r = color.rgb.r
+#     g = color.rgb.g
+#     b = color.rgb.b
+#     rgb_colors.append((r, g, b))
+    
+# tim.pu()
+# tim.setheading(-150)
+# tim.fd(300)
+# tim.setheading(0)
 
 
-rgb_cols = []
-colors = colorgram.extract("image.jpg", 30)
+# for i in range(1,101):
+#     tim.fd(50)
+#     tim.pd()
+#     tim.dot(20,choice(rgb_colors))
+#     tim.pu()
+#     if i % 10 == 0:
+#         tim.setheading(90)
+#         tim.fd(50)
+#         tim.setheading(180)
+#         tim.fd(500)
+#         tim.setheading(0)
+    
+# screen = turtle.Screen()
+# exitonclick()
 
-for i in colors:
-    r = colors.rgb.r
-    g = colors.rgb.g
-    b = colors.rgb.b
-    rgb_cols.append((r,g,b)) 
 
-print(rgb_cols)
