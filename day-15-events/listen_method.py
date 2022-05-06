@@ -22,10 +22,17 @@ def up():
 def down():
     tim.setheading(270)
     tim.fd(30)
-
+def clear():
+    tim.clear()
+    tim.pu()
+    tim.home()
+    tim.pd()
+    
+    
 screen.listen()
 screen.onkeypress(key="Right", fun=right)
 screen.onkey(key="Left", fun=left)
 screen.onkey(key="Up", fun=up)
 screen.onkey(key="Down", fun=down)
+screen.onkey(key="space",fun=clear)
 screen.exitonclick()
