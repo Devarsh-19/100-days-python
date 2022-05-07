@@ -7,6 +7,8 @@ soup = BeautifulSoup(html_text, 'lxml')
 
 tags = soup.find_all('li')
 
+anchor = tags.find_all('a')
+
 for x in tags:
     print(x.text)
 
