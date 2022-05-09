@@ -23,10 +23,21 @@ for i in range(0,5):
 
 is_raceOn = True
 
+moves = [6, 10, 12, 9]
+
 while is_raceOn:
     for turtle in all_turtles:
-        if turtle > 230:
-            if turtle.xcor() >230 :
-                is_raceOn = False
+        if turtle.xcor() > 210:
+            is_raceOn  = False
+            winner = turtle.pencolor()
+            if winner == user_bet:
+                print(f'you win. {winner} is the winner')
+            else:
+                print(f'you lost.{winner} is the winnner.')
+            
 
+        turtle.fd(choice(moves))
+        
+        
+        
 screen.exitonclick()
