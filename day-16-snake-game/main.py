@@ -1,6 +1,8 @@
 import time
 from turtle import Turtle, Screen
 from Snake import Snake
+from food import Food
+
 
 screen = Screen()
 screen.screensize(600,400)
@@ -9,7 +11,7 @@ screen.bgcolor('black')
 screen.tracer(0)
 
 snake = Snake()
-
+food = Food()
 segments = []
 
 
@@ -26,6 +28,9 @@ while gameOn:
     time.sleep(0.1)
 
     snake.move()
-
+    
+    #DETECT COLLISION WITH FOOD
+    
+    
 
 screen.exitonclick()
