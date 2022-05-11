@@ -13,6 +13,12 @@ snake = Snake()
 segments = []
 
 
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
+screen.onkey(snake.down, "Down")
+
 gameOn = True
 
 while gameOn:
