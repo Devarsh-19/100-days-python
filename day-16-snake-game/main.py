@@ -35,6 +35,6 @@ while gameOn:
     
     if snake.head.distance(food) < 15:
         food.refresh()
-        sc.update
+        sc.increase_score()
 
 screen.exitonclick()
