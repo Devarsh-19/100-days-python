@@ -1,8 +1,9 @@
+import imp
 import time
 from turtle import Turtle, Screen
 from Snake import Snake
 from food import Food
-
+from score import Score
 
 screen = Screen()
 screen.screensize(600,400)
@@ -12,6 +13,7 @@ screen.tracer(0)
 
 snake = Snake()
 food = Food()
+sc = Score()
 segments = []
 
 
@@ -33,6 +35,6 @@ while gameOn:
     
     if snake.head.distance(food) < 15:
         food.refresh()
-    
+        sc.update
 
 screen.exitonclick()
