@@ -24,6 +24,10 @@ class Snake:
             t.goto(i)
             self.segments.append(t)
 
+    def add_seg(self):
+        
+        pass
+    
     def move(self):
         for n in range(len(self.segments)-1, 0, -1):
             new_x = self.segments[n - 1].xcor()
@@ -46,3 +50,4 @@ class Snake:
     def down(self):
         if self.head.heading() != UP:
             self.head.setheading(DOWN)
+

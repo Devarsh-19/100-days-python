@@ -15,6 +15,7 @@ class Score(Turtle):
     def increase_score(self):
         self.score +=1
         self.clear()
+        self.update()
         
         
     def update(self):
