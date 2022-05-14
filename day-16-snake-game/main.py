@@ -4,9 +4,10 @@ from turtle import Turtle, Screen
 from Snake import Snake
 from food import Food
 from score import Score
+from wall import Wall
 
 screen = Screen()
-screen.screensize(600,400)
+screen.screensize(600,600)
 screen.title('SNAKE GAME')
 screen.bgcolor('black')
 screen.tracer(0)
@@ -14,7 +15,7 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 sc = Score()
-segments = []
+#wall = Wall()
 
 
 screen.listen()
