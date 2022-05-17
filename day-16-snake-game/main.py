@@ -28,7 +28,7 @@ gameOn = True
 
 while gameOn:
     screen.update()
-    time.sleep(0.1)
+    time.sleep(0.05)
 
     snake.move()
     
@@ -38,5 +38,9 @@ while gameOn:
         food.refresh()
         sc.increase_score()
         snake.add_seg()
+        
+    #DETECT COLLISOIN WITH WALL
+    
+   # if snake.head.xcor() > 280 or snake.head.xcor() < -280 or 
 
 screen.exitonclick()

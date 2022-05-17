@@ -25,15 +25,14 @@ class Snake:
             self.segments.append(t)
 
     def add_seg(self):
-        
-        pass
+        self.segments.append(self.t)
     
     def move(self):
         for n in range(len(self.segments)-1, 0, -1):
             new_x = self.segments[n - 1].xcor()
             new_y = self.segments[n - 1].ycor()
             self.segments[n].goto(new_x, new_y)
-        self.head.forward(MOVE_DISTANCE)
+        self.head.forward(MOVE_DISTANCE + 1)
             
     def up(self):
         if self.head.heading() != DOWN:
