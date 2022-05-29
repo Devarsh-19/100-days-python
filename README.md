@@ -41,4 +41,4 @@ _this is italics text_
 
 > for images:
 
-!(https://i.pinimg.com/custom_covers/222x/636415059782460318_1594662723.jpg)[image]
+! [image1](https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600)
