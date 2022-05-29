@@ -39,6 +39,6 @@ _this is italics text_
 2. two 
 3. three
 
-> for images:
+> for images: ![text](link here)
 
 ![image1](https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600)
