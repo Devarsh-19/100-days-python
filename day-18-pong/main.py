@@ -8,4 +8,4 @@ screen.bgcolor("black")
 screen.setup(width=800, height=600)
 screen.title("PONG")
 
-turtle.exitonclick()
+screen.exitonclick()
